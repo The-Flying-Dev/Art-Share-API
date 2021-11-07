@@ -12,7 +12,7 @@ module App1
     config.load_defaults 5.1
 
     #no need to include the authenticity token in your POST params
-    config.action_controller.default_protect_from_forgery = false
+    #config.action_controller.default_protect_from_forgery = false
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
