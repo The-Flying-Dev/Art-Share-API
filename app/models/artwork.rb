@@ -6,5 +6,7 @@ class Artwork < ApplicationRecord
     belongs_to :artist, foreign_key: :artist_id, class: 'User'
 
     has_many :shared_viewers, through: :artwork_shares, source: :viewer
+
+    has_many :comments, dependent: :destroy
       
 end
